@@ -19,7 +19,7 @@ const animalData = {
 
 
 
-class AnimalRender{
+class Animal{
   constructor(data,animalDivId,species,style,sorting){
     this.data = data,
     this.animalDivId = animalDivId,
@@ -27,10 +27,10 @@ class AnimalRender{
     this.style = style,
     this.sorting = sorting,
     this.sortDirection = {field: null, direction: 'desc'}
-    this.render()
+    this.apendHtml()
   }
   
-  render(){
+  apendHtml(){
     let container = document.getElementById(this.animalDivId);
     let table = `<table class="table table-bordered">
     <thead>
@@ -121,7 +121,8 @@ class AnimalRender{
 
     let isfieldempty = name && size && location && image
     if(!isfieldempty) {
-      alert("Please fill all the field");
+      document.getElementById("error").innerHTML = "Please fill all the field"
+      document.getElementById("error").style.color = "red";
       return false
     }else{
       document.getElementById("error").innerHTML = ""
@@ -138,14 +139,15 @@ class AnimalRender{
     );
 
     if(!pattern.test(image)){
-      alert("Please enter the correct image url");
+      document.getElementById("error").innerHTML = "Please enter the correct image url"
+      document.getElementById("error").style.color = "red";
       return false
     }
     
 
     this.data.push({  "name": name,  "species": this.species, "size": size, "location": location,  "image":image})
     $("#myModal").modal("hide")
-    this.render();
+    this.apendHtml();
   }
 
   validate(name,edit,index){
@@ -215,7 +217,8 @@ class AnimalRender{
 
    let isfieldempty = name && size && location && image
     if(!isfieldempty) {
-      alert("Please fill all the field");
+      document.getElementById("error").innerHTML = "Please fill all the field"
+      document.getElementById("error").style.color = "red";
       return false
     }else{
       document.getElementById("error").innerHTML = ""
@@ -232,7 +235,8 @@ class AnimalRender{
     );
 
     if(!pattern.test(image)){
-      alert("Please enter the correct image url");
+      document.getElementById("error").innerHTML = "Please enter the correct image url"
+      document.getElementById("error").style.color = "red";
       return false
     }
 
@@ -247,12 +251,12 @@ class AnimalRender{
    this.data[index].location = location
    this.data[index].image = image
    $("#myModal").modal("hide")
-   this.render();
+   this.apendHtml();
   }
 
   deleteRow(index){
     this.data.splice(index,1)
-    this.render()
+    this.apendHtml()
   }
 
   sort(sortCol){
@@ -271,17 +275,16 @@ class AnimalRender{
     
     this.sortDirection.direction = direction
     this.sortDirection.field = sortCol
-    console.log(this.data,sortCol,direction)
-    this.render()
+    this.apendHtml()
   }
 
 }
 
 
 let tableRender = {
-  bigCats : new AnimalRender(animalData.bigCats,"bigCats","Big Cats",{},["name", "species", "size", "location"]),
-  dogs : new AnimalRender(animalData.dogs,"dogs","Dogs",{ style: 'font-weight: bold;' },["name", "location"]),
-  bigFish : new AnimalRender(animalData.bigFish,"bigFish","Big Fish",{ style: 'font-weight: bold; font-style: italic; color: blue;' },["size"]),
+  bigCats : new Animal(animalData.bigCats,"bigCats","Big Cats",{},["name", "species", "size", "location"]),
+  dogs : new Animal(animalData.dogs,"dogs","Dogs",{ style: 'font-weight: bold;' },["name", "location"]),
+  bigFish : new Animal(animalData.bigFish,"bigFish","Big Fish",{ style: 'font-weight: bold; font-style: italic; color: blue;' },["size"]),
 }
 
 
