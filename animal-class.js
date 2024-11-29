@@ -1,17 +1,20 @@
 const animalData = {
   "bigCats": [
-    {  "name": "Lion",  "species": "big cats", "size": "10 ft", "location": "America", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfE019GGBrb6OIPcqHAu4o_rsJxcxd5n5uIkaYEhtgfDYHwPr3k11jV4NKJ8zBamcE8GyVPtE1eFtzk6T5WLQlWM0XFvg5SPPUoSvwQpiEBvMyC2BFHSUINqReCdpMyw-w9fwp5Pw?key=diMK_80ckKTiDYYhCkLD1Q"  },
-    {  "name": "Tiger","species": "big cats", "location": "Canada", "size": "10 ft",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdt2gzqT-l1sJjbAo-i_HGczbpchIU9J8tKv_jcUagfQS9Qj_B5sakVMsFvJZFFOMrlycp-B7kvbazzWvDLa1zJXmOIsAmjDVtwr4f2gB5Ne6r4mZ9bFO4R56cz6pVX8XPedZfrsw?key=diMK_80ckKTiDYYhCkLD1Q" }
+    {  "name": "Lion",  "species": "big cats", "size": "10", "location": "America", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfE019GGBrb6OIPcqHAu4o_rsJxcxd5n5uIkaYEhtgfDYHwPr3k11jV4NKJ8zBamcE8GyVPtE1eFtzk6T5WLQlWM0XFvg5SPPUoSvwQpiEBvMyC2BFHSUINqReCdpMyw-w9fwp5Pw?key=diMK_80ckKTiDYYhCkLD1Q"  },
+    {  "name": "Tiger","species": "big cats", "location": "Canada", "size": "10",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdt2gzqT-l1sJjbAo-i_HGczbpchIU9J8tKv_jcUagfQS9Qj_B5sakVMsFvJZFFOMrlycp-B7kvbazzWvDLa1zJXmOIsAmjDVtwr4f2gB5Ne6r4mZ9bFO4R56cz6pVX8XPedZfrsw?key=diMK_80ckKTiDYYhCkLD1Q" }
   ],
   "dogs": [
-      {  "name": "Rotwailer",  "species": "Dogs", "size": "10 ft", "location": "India",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpUZL_lVaoYlN4RHn-g4VVVK7n4Zi53wNe8n73BVSrnsExqko0Api2sYCOaIrOKtt41mhn180NGkjSe30N4s_CRIp44R1WyiVE5DVKJ0fl-EsBtk0Kxm2gDqg_4g9BlLTsValg?key=diMK_80ckKTiDYYhCkLD1Q" },
-      {  "name": "German Shepherd","species": "Dogs", "location": "China", "size": "10 ft", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfwItZMqajFpFFv0rhT453SATyQ_iu37tYN2p5Ka379Zlc8aoE0bgWUDonnG2iIkCeA4vEHaW3jOkm-YbcKsjk1XVYyuj5rV2R2gM7GtDV1fte8OqCy1G668mGbH-ujBxV03kRRTg?key=diMK_80ckKTiDYYhCkLD1Q" }
+      {  "name": "Rotwailer",  "species": "Dogs", "size": "10", "location": "India",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpUZL_lVaoYlN4RHn-g4VVVK7n4Zi53wNe8n73BVSrnsExqko0Api2sYCOaIrOKtt41mhn180NGkjSe30N4s_CRIp44R1WyiVE5DVKJ0fl-EsBtk0Kxm2gDqg_4g9BlLTsValg?key=diMK_80ckKTiDYYhCkLD1Q" },
+      {  "name": "German Shepherd","species": "Dogs", "location": "China", "size": "10", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfwItZMqajFpFFv0rhT453SATyQ_iu37tYN2p5Ka379Zlc8aoE0bgWUDonnG2iIkCeA4vEHaW3jOkm-YbcKsjk1XVYyuj5rV2R2gM7GtDV1fte8OqCy1G668mGbH-ujBxV03kRRTg?key=diMK_80ckKTiDYYhCkLD1Q" }
   ],
   "bigFish": [
-      {  "name": "Humpback Whale",  "species": "Big Fish", "size": "10 ft", "location": "USA",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHSwj-_SimDoeryiN-c6aH4QLmIJGVTuR4QmgOB2i6N4ahajwEjgy1E1qr3Terf9yyReyfnAwByvKaxD6F_fBCkzGRyYL_UhKwI8ifWRd0aE3s7wh8ExSyk0hlL-yi-ZbSqt4TJw?key=diMK_80ckKTiDYYhCkLD1Q" },
-      {  "name": "Killer Whale","species": "Big Fish", "size": "20 ft","location": "Asia", "Japan": "Large", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcl2XL2NPrp0rPHEcc1Mm_0ey5lpZQ6EOug0R4wIKbfxIDe5F8cLoysziE_yaCOtRRt2Z1xO5jdc4iJtVzJLXDN8yxl8EESCdIirA4s4pVHduP-sHn6CCmbdqeYwjgqcO-rgzOt?key=diMK_80ckKTiDYYhCkLD1Q" }
+      {  "name": "Humpback Whale",  "species": "Big Fish", "size": "10", "location": "USA",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHSwj-_SimDoeryiN-c6aH4QLmIJGVTuR4QmgOB2i6N4ahajwEjgy1E1qr3Terf9yyReyfnAwByvKaxD6F_fBCkzGRyYL_UhKwI8ifWRd0aE3s7wh8ExSyk0hlL-yi-ZbSqt4TJw?key=diMK_80ckKTiDYYhCkLD1Q" },
+      {  "name": "Killer Whale","species": "Big Fish", "size": "20","location": "Asia", "Japan": "Large", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcl2XL2NPrp0rPHEcc1Mm_0ey5lpZQ6EOug0R4wIKbfxIDe5F8cLoysziE_yaCOtRRt2Z1xO5jdc4iJtVzJLXDN8yxl8EESCdIirA4s4pVHduP-sHn6CCmbdqeYwjgqcO-rgzOt?key=diMK_80ckKTiDYYhCkLD1Q" }
   ]
 }
+
+
+  
 
 
 
@@ -36,7 +39,7 @@ class Animal{
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('name')">Name</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('size')">Size</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('location')">Location</th>
-        <th scope="col" style="width: 335px;">Image</th>
+        <th scope="col" style="width:335px">Image</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
@@ -54,10 +57,10 @@ class Animal{
       return (`<tr>
         <td>${val.species}</td>
         <td style='${this.style.style}'>${val.name}</td>
-        <td>${val.size}</td>
+        <td>${val.size} ft</td>
         <td>${val.location}</td>
         <td>
-        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;width: 34%;max-width: 89%;" alt="${val.name}" title="${val.name}">
+        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;max-width: 89%;" alt="${val.name}" title="${val.name}">
         
         </td>
         <td>
@@ -148,7 +151,7 @@ class Animal{
   }
 
   validate(name,edit,index){
-      name = name.trim()
+      name = name.trim()      
       let existingName = this.data.map(e => e.name.toLowerCase())
       if(edit){
         if(existingName[index] != name.toLowerCase()){
