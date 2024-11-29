@@ -35,8 +35,8 @@ class Animal{
         <th scope="col" style="cursor: pointer;"  onclick="tableRender['${this.animalDivId}'].sort('species')">Species</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('name')">Name</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('size')">Size</th>
-        <th scope="col" style="cursor: pointer;width: 335px;" onclick="tableRender['${this.animalDivId}'].sort('location')">Location</th>
-        <th scope="col">Image</th>
+        <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('location')">Location</th>
+        <th scope="col" style="width: 335px;">Image</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
