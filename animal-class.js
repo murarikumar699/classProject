@@ -57,7 +57,7 @@ class Animal{
         <td>${val.size}</td>
         <td>${val.location}</td>
         <td>
-        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;" alt="${val.name}" title="${val.name}">
+        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;width: 34%;" alt="${val.name}" title="${val.name}">
         
         </td>
         <td>
