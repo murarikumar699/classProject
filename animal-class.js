@@ -151,6 +151,7 @@ class Animal{
   }
 
   validate(name,edit,index){
+      name = name.trim()
       let existingName = this.data.map(e => e.name.toLowerCase())
       if(edit){
         if(existingName[index] != name.toLowerCase()){
