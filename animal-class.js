@@ -201,7 +201,7 @@ class Animal{
 
    
 
-   let isfieldempty = name && size && location && image
+   let isfieldempty = name && size && location
     if(!isfieldempty) {
       document.getElementById("error").innerHTML = "Please fill all the field"
       document.getElementById("error").style.color = "red";
