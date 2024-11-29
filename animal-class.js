@@ -35,7 +35,7 @@ class Animal{
         <th scope="col" style="cursor: pointer;"  onclick="tableRender['${this.animalDivId}'].sort('species')">Species</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('name')">Name</th>
         <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('size')">Size</th>
-        <th scope="col" style="cursor: pointer;" onclick="tableRender['${this.animalDivId}'].sort('location')">Location</th>
+        <th scope="col" style="cursor: pointer;width: 335px;" onclick="tableRender['${this.animalDivId}'].sort('location')">Location</th>
         <th scope="col">Image</th>
         <th scope="col">Action</th>
       </tr>
@@ -57,7 +57,7 @@ class Animal{
         <td>${val.size}</td>
         <td>${val.location}</td>
         <td>
-        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;width: 34%;" alt="${val.name}" title="${val.name}">
+        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;width: 34%;max-width: 89%;" alt="${val.name}" title="${val.name}">
         
         </td>
         <td>
