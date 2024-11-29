@@ -14,11 +14,6 @@ const animalData = {
 }
 
 
-  
-
-
-
-
 class Animal{
   constructor(data,animalDivId,species,style,sorting){
     this.data = data,
@@ -60,7 +55,7 @@ class Animal{
         <td>${val.size} ft</td>
         <td>${val.location}</td>
         <td>
-        <img class="image" src="${val.image}" style="border: 2px solid black;cursor: pointer;max-width: 89%;" alt="${val.name}" title="${val.name}">
+        <img class="image" src="${val.image}"  alt="${val.name}" title="${val.name}">
         
         </td>
         <td>
@@ -93,7 +88,8 @@ class Animal{
                      <input type="text" class="form-control" placeholder="location" id="location"  required>
                      </div>
                      <div class="mb-3">
-                     <input type="url"  class="form-control" placeholder="https://image.png" id="image" required>
+                     <input type="file"  class="form-control"  id="image" oninput="imageUrl.src=window.URL.createObjectURL(this.files[0]),imageUrl.style.display='block'">
+                     <img class="image mt-5" src="" id="imageUrl" style="display:none">
                      </div>
                     </div>
                     <div class="modal-footer">
@@ -117,7 +113,7 @@ class Animal{
     let name = document.getElementById("name").value;
     let size = document.getElementById("size").value;
     let location = document.getElementById("location").value;
-    let image = document.getElementById("image").value;
+    let image = document.getElementById("image").value;   
 
     let isfieldempty = name && size && location && image
     if(!isfieldempty) {
@@ -128,22 +124,8 @@ class Animal{
       document.getElementById("error").innerHTML = ""
     }
 
-    const pattern = new RegExp(
-      '^(https?:\\/\\/)?' + // protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-        '(\\#[-a-z\\d_]*)?$', // fragment locator
-      'i'
-    );
-
-    if(!pattern.test(image)){
-      document.getElementById("error").innerHTML = "Please enter the correct image url"
-      document.getElementById("error").style.color = "red";
-      return false
-    }
-    
+    var file  = document.querySelector('input[type=file]').files[0];
+    image = URL.createObjectURL(file);
 
     this.data.push({  "name": name,  "species": this.species, "size": size, "location": location,  "image":image})
     $("#myModal").modal("hide")
@@ -195,7 +177,8 @@ class Animal{
                      <input type="text" class="form-control" placeholder="location" id="location" value=${data.location}>
                      </div>
                      <div class="mb-3">
-                     <input type="url" class="form-control" placeholder="https://image.png" id="image" value=${data.image}>
+                     <input type="file" class="form-control" placeholder="https://image.png" id="image" oninput="imageUrl.src=window.URL.createObjectURL(this.files[0]),imageUrl.style.display='block'">
+                     <img class="image mt-5" src="${data.image}" id="imageUrl"  alt="${data.name}" title="${data.name}" >
                      </div>
                     </div>
                     <div class="modal-footer">
@@ -216,6 +199,8 @@ class Animal{
    let location = document.getElementById("location").value;
    let image = document.getElementById("image").value;
 
+   
+
    let isfieldempty = name && size && location && image
     if(!isfieldempty) {
       document.getElementById("error").innerHTML = "Please fill all the field"
@@ -225,21 +210,8 @@ class Animal{
       document.getElementById("error").innerHTML = ""
     }
 
-    const pattern = new RegExp(
-      '^(https?:\\/\\/)?' + // protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
-        '(\\#[-a-z\\d_]*)?$', // fragment locator
-      'i'
-    );
-
-    if(!pattern.test(image)){
-      document.getElementById("error").innerHTML = "Please enter the correct image url"
-      document.getElementById("error").style.color = "red";
-      return false
-    }
+    var file  = document.querySelector('input[type=file]').files[0];
+    image = URL.createObjectURL(file);
 
     if(this.validate(document.getElementById("name").value,true,index)){
       document.getElementById("error").innerHTML = "This name already exists. Please use another name."
