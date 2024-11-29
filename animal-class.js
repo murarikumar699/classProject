@@ -209,9 +209,11 @@ class Animal{
     }else{
       document.getElementById("error").innerHTML = ""
     }
-
-    var file  = document.querySelector('input[type=file]').files[0];
-    image = URL.createObjectURL(file);
+    if(image){
+      var file  = document.querySelector('input[type=file]').files[0];
+      image = URL.createObjectURL(file);
+    }
+    
 
     if(this.validate(document.getElementById("name").value,true,index)){
       document.getElementById("error").innerHTML = "This name already exists. Please use another name."
@@ -222,7 +224,7 @@ class Animal{
    this.data[index].name = name
    this.data[index].size = size
    this.data[index].location = location
-   this.data[index].image = image
+   this.data[index].image = image?image:this.data[index].image
    $("#myModal").modal("hide")
    this.apendHtml();
   }
