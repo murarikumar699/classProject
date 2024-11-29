@@ -14,9 +14,6 @@ const animalData = {
 }
 
 
-  
-
-
 
 
 class Animal{
