@@ -26,7 +26,16 @@ class Animal{
   }
   
   apendHtml(){
-    let container = document.getElementById(this.animalDivId);
+    let container = document.getElementById(this.animalDivId);   
+    let animal = "Add Cats";
+    if(this.animalDivId == "bigCats"){
+      animal = "Add Cats";
+    }else if(this.animalDivId == "dogs"){
+      animal = "Add Dogs";
+    }else{
+      animal = "Add Fish";
+    }
+
     let table = `<table class="table table-bordered">
     <thead>
       <tr>
@@ -41,8 +50,9 @@ class Animal{
     <tbody>    
     ${this.getTableRow(this.data)}
     </tbody>
+    <button class="btn btn-sm btn-success mb-3" onclick="tableRender['${this.animalDivId}'].addRow()">${animal}</button>
     </table>
-    <button class="btn btn-sm btn-success" onclick="tableRender['${this.animalDivId}'].addRow()">Add Animal</button>
+    
     `
     container.innerHTML = table
   }
