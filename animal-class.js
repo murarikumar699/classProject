@@ -1,11 +1,11 @@
 const animalData = {
   "bigCats": [
     {  "name": "Lion",  "species": "big cats", "size": "10 ft", "location": "America", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfE019GGBrb6OIPcqHAu4o_rsJxcxd5n5uIkaYEhtgfDYHwPr3k11jV4NKJ8zBamcE8GyVPtE1eFtzk6T5WLQlWM0XFvg5SPPUoSvwQpiEBvMyC2BFHSUINqReCdpMyw-w9fwp5Pw?key=diMK_80ckKTiDYYhCkLD1Q"  },
-    {  "name": "Tiger","species": "big cats", "location": "Canada", "size": "Large",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdt2gzqT-l1sJjbAo-i_HGczbpchIU9J8tKv_jcUagfQS9Qj_B5sakVMsFvJZFFOMrlycp-B7kvbazzWvDLa1zJXmOIsAmjDVtwr4f2gB5Ne6r4mZ9bFO4R56cz6pVX8XPedZfrsw?key=diMK_80ckKTiDYYhCkLD1Q" }
+    {  "name": "Tiger","species": "big cats", "location": "Canada", "size": "10 ft",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdt2gzqT-l1sJjbAo-i_HGczbpchIU9J8tKv_jcUagfQS9Qj_B5sakVMsFvJZFFOMrlycp-B7kvbazzWvDLa1zJXmOIsAmjDVtwr4f2gB5Ne6r4mZ9bFO4R56cz6pVX8XPedZfrsw?key=diMK_80ckKTiDYYhCkLD1Q" }
   ],
   "dogs": [
       {  "name": "Rotwailer",  "species": "Dogs", "size": "10 ft", "location": "India",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXcpUZL_lVaoYlN4RHn-g4VVVK7n4Zi53wNe8n73BVSrnsExqko0Api2sYCOaIrOKtt41mhn180NGkjSe30N4s_CRIp44R1WyiVE5DVKJ0fl-EsBtk0Kxm2gDqg_4g9BlLTsValg?key=diMK_80ckKTiDYYhCkLD1Q" },
-      {  "name": "German Shepherd","species": "Dogs", "location": "China", "size": "Large", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfwItZMqajFpFFv0rhT453SATyQ_iu37tYN2p5Ka379Zlc8aoE0bgWUDonnG2iIkCeA4vEHaW3jOkm-YbcKsjk1XVYyuj5rV2R2gM7GtDV1fte8OqCy1G668mGbH-ujBxV03kRRTg?key=diMK_80ckKTiDYYhCkLD1Q" }
+      {  "name": "German Shepherd","species": "Dogs", "location": "China", "size": "10 ft", "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXfwItZMqajFpFFv0rhT453SATyQ_iu37tYN2p5Ka379Zlc8aoE0bgWUDonnG2iIkCeA4vEHaW3jOkm-YbcKsjk1XVYyuj5rV2R2gM7GtDV1fte8OqCy1G668mGbH-ujBxV03kRRTg?key=diMK_80ckKTiDYYhCkLD1Q" }
   ],
   "bigFish": [
       {  "name": "Humpback Whale",  "species": "Big Fish", "size": "10 ft", "location": "USA",  "image": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHSwj-_SimDoeryiN-c6aH4QLmIJGVTuR4QmgOB2i6N4ahajwEjgy1E1qr3Terf9yyReyfnAwByvKaxD6F_fBCkzGRyYL_UhKwI8ifWRd0aE3s7wh8ExSyk0hlL-yi-ZbSqt4TJw?key=diMK_80ckKTiDYYhCkLD1Q" },
